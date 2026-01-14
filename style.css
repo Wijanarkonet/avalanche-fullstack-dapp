@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1b2559, #0b1020);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card {
+    width: 380px;
+    padding: 28px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 22px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#connectBtn {
+    background: linear-gradient(135deg, #6f7cff, #9f7cff);
+    color: #fff;
+}
+
+#connectBtn:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+#disconnectBtn {
+    background: #2a314d;
+    color: #bbb;
+}
+
+#disconnectBtn:hover {
+    background: #3a4160;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #444;
+}
+
+.badge.connected {
+    background: #1f8f4a;
+}
+
+.badge.error {
+    background: #b83232;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.label {
+    min-width: 80px;
+    font-weight: 600;
+    color: #555;
+}
+
+.value {
+    text-align: right;
+    word-break: break-all;
+    max-width: 65%;
+    line-height: 1.4;
+}
